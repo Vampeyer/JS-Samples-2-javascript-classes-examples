@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <button>update</button>
+<div style="width: 400px; height: 600px;  border: 2px solid black; "  > Big Square
+
+    <canvas id="myCanvas" width="400px" height="600px"></canvas>
+</div>
+
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+  
+      // Now you can use ctx to draw on the canvas
+
+function random(number) {
+  return Math.floor(Math.random() * number);
+}
+
+
+canvas.width = document.documentElement.clientWidth;
+  canvas.height = document.documentElement.clientHeight;
+
+
+let count = 1 
+for(count; count < 10; count++){
+ctx.fillStyle = "rgb(255 0 0 / 10%)";
+    ctx.arc(
+      random(canvas.width),
+      random(canvas.height),
+      random(50), 5000, 5000
+ 
+    );
+    ctx.fill()
+      ctx.fillRect(10, 10, 50, 50); 
+
+
+
+
+
+
+
+
+
+      
+}
+
+
+    </script>
+
+
+
+
+
+<button> Update</button>
+
+<canvas >   </canvas>
+
+</body>
+</html>
